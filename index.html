@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Math Operations</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <center>
+      <table>
+        <tr>
+          <td>
+            <form>
+              <input id="addition1" type="text" placeholder="#" />
+            </form>
+          </td>
+          <td>
+            <h1>+</h1>
+          </td>
+          <td>
+            <form>
+              <input id="addition2" type="text" placeholder="#" />
+            </form>
+          </td>
+          <td>
+            <button type="button" onclick="add()">=</button>
+          </td>
+          <td><span id="result1"></span></td>
+        </tr>
+        <tr>
+          <td>
+            <form>
+              <input id="multiplication1" type="text" placeholder="#" />
+            </form>
+          </td>
+          <td>
+            <h1>x</h1>
+          </td>
+          <td>
+            <form>
+              <input id="multiplication2" type="text" placeholder="#" />
+            </form>
+          </td>
+          <td>
+            <button type="button" onclick="multiply()">=</button>
+          </td>
+          <td><span id="result2"></span></td>
+        </tr>
+        <tr>
+          <td>
+            <form>
+              <input id="division1" type="text" placeholder="#" />
+            </form>
+          </td>
+          <td>
+            <h1>/</h1>
+          </td>
+          <td>
+            <form>
+              <input id="division2" type="text" placeholder="#" />
+            </form>
+          </td>
+          <td>
+            <button type="button" onclick="divide()">=</button>
+          </td>
+          <td><span id="result3"></span></td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function add() {
+        num1 = document.getElementById("addition1").value;
+        num2 = document.getElementById("addition2").value;
+        document.getElementById("result1").innerHTML = num1 + num2;
+      }
+      function multiply() {
+        num1 = document.getElementById("multiplication1").value;
+        num2 = document.getElementById("multiplication2").value;
+        document.getElementById("result2").innerHTML = num1 * num2;
+      }
+      function divide() {
+        num1 = document.getElementById("division1").value;
+        num2 = document.getElementById("division2").value;
+        document.getElementById("result3").innerHTML = num1 / num2;
+      }
+    </script>
+  </body>
+</html>
