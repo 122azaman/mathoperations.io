@@ -32,7 +32,7 @@
           <td>
             <button type="button" onclick="add()">=</button>
           </td>
-          <td><span id="result1"></span></td>
+          <td><span id="result1">?</span></td>
         </tr>
         <tr>
           <td>
@@ -51,7 +51,7 @@
           <td>
             <button type="button" onclick="multiply()">=</button>
           </td>
-          <td><span id="result2"></span></td>
+          <td><span id="result2">?</span></td>
         </tr>
         <tr>
           <td>
@@ -70,16 +70,17 @@
           <td>
             <button type="button" onclick="divide()">=</button>
           </td>
-          <td><span id="result3"></span></td>
+          <td><span id="result3">?</span></td>
         </tr>
       </table>
     </center>
 
     <script>
       function add() {
-        num1 = document.getElementById("addition1").value;
-        num2 = document.getElementById("addition2").value;
-        document.getElementById("result1").innerHTML = num1 + num2;
+        var num1 = Number(document.getElementById("addition1").value);
+        var num2 = Number(document.getElementById("addition2").value);
+        var total = num1 + num2;
+        document.getElementById("result1").innerHTML = total;
       }
       function multiply() {
         num1 = document.getElementById("multiplication1").value;
